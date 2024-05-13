@@ -1,0 +1,68 @@
+body {
+  width: 1200px;
+
+  font-family: "Geometria";
+}
+.header {
+  background-color: rgba(124, 124, 124, 0.466);
+}
+.container1 {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.hed1 {
+  text-decoration: none;
+  color: black;
+}
+.hed2 {
+  text-decoration: none;
+  color: black;
+}
+.hed3 {
+  text-decoration: none;
+  color: black;
+}
+
+.vhod {
+  margin-right: -100px;
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+.avtoriza {
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.lozung {
+  text-align: center;
+  font-size: 20px;
+}
+.video1 {
+  width: 1200px;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: rgba(124, 124, 124, 0.466);
+}
+.container2 {
+  height: 200px;
+  display: flex;
+}
