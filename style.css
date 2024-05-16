@@ -1,53 +1,105 @@
 body {
-  width: 1200px;
-
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Geometria";
 }
+
 .header {
-  background-color: rgba(124, 124, 124, 0.466);
+  font-weight: 500;
+
+  width: 100%;
 }
 .container1 {
   height: 50px;
+  font-size: 50px;
+}
+
+#menu {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row;
 }
-.hed1 {
-  text-decoration: none;
+#hed1 {
+  font-size: 20px;
   color: black;
+  padding-left: 50px;
 }
-.hed2 {
-  text-decoration: none;
+#hed2 {
+  font-size: 20px;
   color: black;
+  padding-left: 60px;
 }
-.hed3 {
-  text-decoration: none;
+#hed3 {
+  font-size: 20px;
   color: black;
+  padding-left: 60px;
 }
 
 .vhod {
-  margin-right: -100px;
+  margin-right: 10px;
   width: 70px;
   height: 30px;
   font-size: 15px;
   color: rgb(0, 0, 0);
   background-color: white;
-  border: none;
   border-radius: 20px;
+  font-weight: 500;
+}
+.vhod:hover {
+}
+.avtoriza:hover {
 }
 .avtoriza {
   color: rgb(0, 0, 0);
-  width: 150px;
+  width: 160px;
   height: 30px;
   font-size: 15px;
   background-color: white;
-  border: none;
   border-radius: 20px;
+  font-weight: 500;
 }
 
 .main {
   margin-top: 30px;
+}
+.h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
+}
+
+.topmelodiy {
+  margin-top: 20px;
+  font-size: 49px;
+  font-weight: 500;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 0;
+  grid-row-end: 2;
+}
+
+.podrobney {
+  color: ;
+  background-color: ;
+  font-weight: 500;
+  font-size: 25px;
+  margin-left: 70px;
+  width: 300px;
+  height: 100px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .lozung {
@@ -58,11 +110,63 @@ body {
   width: 1200px;
 }
 
+#carouselExampleCaptions {
+  height: 500px;
+  width: 500px;
+  margin-left: 50px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 0;
+  grid-row-end: 2;
+}
+
 .footer {
+  height: 450px;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
   margin-top: 30px;
   background-color: rgba(124, 124, 124, 0.466);
 }
-.container2 {
-  height: 200px;
+.contrainer2 {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: -20px;
+}
+.info {
+  padding-top: 50px;
+}
+.tel1 {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.em1 {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+@media (max-width: 720px) {
+  .container1 {
+    width: 720px;
+  }
+  #menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .video1 {
+    width: 720px;
+  }
+  .lozung {
+    margin-left: -500px;
+    font-size: 20px;
+  }
+  #carouselExampleControls {
+    width: 370px;
+  }
 }
