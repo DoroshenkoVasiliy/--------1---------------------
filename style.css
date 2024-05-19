@@ -8,65 +8,67 @@ body {
 
 .header {
   font-weight: 500;
-
   width: 100%;
 }
 .container1 {
-  height: 50px;
   font-size: 50px;
-}
-
-#menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
+  border-bottom: 2px solid;
 }
 #hed1 {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   padding-left: 50px;
 }
 #hed2 {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   padding-left: 60px;
 }
 #hed3 {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   padding-left: 60px;
 }
-
-.vhod {
+.vhod,
+.vyhod {
   margin-right: 10px;
-  width: 70px;
-  height: 30px;
-  font-size: 15px;
+  width: 95px;
+  height: 45px;
+  font-size: 23px;
   color: rgb(0, 0, 0);
   background-color: white;
   border-radius: 20px;
   font-weight: 500;
+  transition: box-shadow 0.2s;
 }
-.vhod:hover {
+
+#ava {
+  margin-right: 50px;
 }
-.avtoriza:hover {
-}
+
 .avtoriza {
   color: rgb(0, 0, 0);
-  width: 160px;
-  height: 30px;
-  font-size: 15px;
+  width: 255px;
+  height: 45px;
+  font-size: 23px;
   background-color: white;
   border-radius: 20px;
   font-weight: 500;
+  transition: box-shadow 0.2s;
+}
+
+.avtoriza:hover,
+.vhod:hover,
+.vyhod:hover {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35);
 }
 
 .main {
   margin-top: 30px;
 }
+
+/* О нас */
+
 .h1 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -88,7 +90,7 @@ body {
   grid-row-end: 2;
 }
 
-.podrobney {
+/* .podrobney {
   color: ;
   background-color: ;
   font-weight: 500;
@@ -100,7 +102,7 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
-}
+} */
 
 .lozung {
   text-align: center;
@@ -121,52 +123,177 @@ body {
 }
 
 .footer {
-  height: 450px;
   width: 100%;
+  border-top: 2px solid;
   font-size: 25px;
   font-weight: 500;
-  margin-top: 30px;
-  background-color: rgba(124, 124, 124, 0.466);
+  margin-top: 10px;
+  bottom: 0;
 }
-.contrainer2 {
+.container2 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
-  padding-top: 20px;
-  padding-left: -20px;
+  padding: 20px;
+  margin-top: -40px;
 }
 .info {
-  padding-top: 50px;
+  padding-top: 20px;
+}
+.info1 {
+  max-width: 500px;
+}
+.info2 {
+  max-width: 500px;
+  margin-left: 200px;
 }
 .tel1 {
-  padding-top: 10px;
   padding-left: 40px;
 }
 .em1 {
-  padding-top: 10px;
   padding-left: 40px;
 }
 
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(4, 350px);
+  margin-left: 50px;
+}
+
+.ofd1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+}
+
+.kod {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+  color: black;
+}
+.kod:hover {
+  text-decoration: underline;
+}
+
+#nap {
+  width: 1200px;
+  height: 500px;
+  /* object-fit: cover;
+  padding-bottom: 30px; */
+}
+
+.gdeMy {
+  margin-bottom: -220px;
+}
+/* iframe {
+  width: 700px;
+  height: 700px;
+} */
+
+/* отдельные пластинки */
+
+.plastinka {
+  text-align: center;
+}
+.fotoplast {
+  width: 500px;
+}
+.button {
+  font-size: 25px;
+  font-weight: 500;
+  width: 150px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-color: black;
+}
+
 @media (max-width: 720px) {
-  .container1 {
-    width: 720px;
+  #ava {
+    display: none;
   }
-  #menu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+  /* О нас */
+  #hed1 {
+    font-size: 30px;
+    color: black;
+    padding-left: 300px;
   }
-  .video1 {
-    width: 720px;
+  #hed2 {
+    font-size: 30px;
+    color: black;
+    padding-left: 285px;
   }
+  #hed3 {
+    font-size: 30px;
+    color: black;
+    padding-left: 240px;
+  }
+  .vhod,
+  .vyhod {
+    margin-left: 290px;
+  }
+  .avtoriza {
+    display: none;
+  }
+
   .lozung {
-    margin-left: -500px;
     font-size: 20px;
   }
+
+  .video1 {
+    width: 720px;
+    margin-left: 240px;
+  }
+
   #carouselExampleControls {
     width: 370px;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1px;
+  }
+  .info1 {
+    max-width: 500px;
+    margin-left: 100px;
+  }
+  .info2 {
+    max-width: 500px;
+    margin-left: 40px;
+  }
+  .kont {
+    margin-left: -40px;
+  }
+  .tel1 {
+    margin-left: -70px;
+  }
+  .em1 {
+    margin-left: -70px;
+  }
+
+  /* Где нас найти? */
+
+  .gdeMy {
+    margin-bottom: -120px;
+  }
+
+  iframe {
+    width: 720px;
+    height: 550px;
+  }
+
+  #nap {
+    width: 720px;
+    height: 250px;
+  }
+
+  /* Каталог */
+  .container4 {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(5, 350px);
   }
 }
